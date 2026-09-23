@@ -1,0 +1,16 @@
+PRÉVIA DA JUU 🍒 + INFINITEPAY
+
+Esta versão já está preparada para o Checkout Integrado da InfinitePay.
+
+Falta publicar o servidor e configurar:
+INFINITE_HANDLE = sua InfiniteTag sem o símbolo $
+SITE_URL = endereço público do site
+
+O endpoint /api/create-checkout cria o link da InfinitePay.
+O endpoint /webhook/infinitepay recebe a confirmação.
+
+IMPORTANTE:
+- Não coloque a InfiniteTag em código público se sua arquitetura exigir segredo.
+- Não libere a galeria apenas pelo retorno da página de sucesso.
+- Para liberar fotos/vídeos automaticamente, o webhook precisa gravar a compra em um banco de dados e a galeria precisa usar URLs/arquivos privados.
+- Os valores atuais são R$39,90, R$59,90 e R$89,90 e podem ser alterados.
