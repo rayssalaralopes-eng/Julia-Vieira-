@@ -2,7 +2,7 @@
 .hero .hero-photo{
   width:100%;
   height:250px;
-  object-fit:cover;
+  object-fit:contain;
   border-radius:22px;
   display:block;
 }
